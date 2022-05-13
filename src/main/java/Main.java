@@ -4,10 +4,12 @@ public class Main {
 
     long amount = 1000_60;
     boolean registered = true;
+    long expected= 30;
 
+    long bonuspoint = service.calculate(amount, registered);
+    boolean good = expected == bonuspoint;
 
-    service.calculate(amount, registered);
-
+    System.out.println(good);
   }
 }
 
