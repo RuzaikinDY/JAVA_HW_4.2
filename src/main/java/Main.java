@@ -1,15 +1,15 @@
 public class Main {
-  public static void main(String[] args) {
-    BonusService service = new BonusService();
+    public static void main(String[] args) {
+        BonusService service = new BonusService();
 
-    long amount = 1000_60;
-    boolean registered = true;
-    long expected= 30;
+        long amount = 1000_60;
+        boolean registered = true;
+        long expected = 30;
 
-    long bonuspoint = service.calculate(amount, registered);
-    boolean good = expected == bonuspoint;
+        long bonuspoint = service.calculate(amount, registered);
+        boolean good = expected == bonuspoint;
 
-    System.out.println(good);
-  }
+        System.out.println(good);
+    }
 }
 
